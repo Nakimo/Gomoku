@@ -116,6 +116,8 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lParam)
 			if(game->Map[game->LOAD[game->Load_cnt - 1][0]][game->LOAD[game->Load_cnt - 1][1]] == 1) MessageBox(hWnd, L"Èæµ¹ ½Â¸®", L"GAME OVER", MB_OK);
 			else MessageBox(hWnd, L"¹éµ¹ ½Â¸®", L"GAME OVER", MB_OK);
 
+			delete game;
+
 			PostQuitMessage(0);
 		}
 
